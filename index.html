@@ -11,8 +11,7 @@
     
     <script>
     $('body').scrollspy({ target: '.navbar-inverse' });
-	</script>
-	
+    </script>
 	
     <title>Promise Tracker</title>
 
@@ -35,131 +34,125 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body data-spy="scroll" data-target=".navbar-inverse">
 
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#home" class="navbar-brand">
+            <img src="img/promisetrackerlogo_sm.png">
+            <span>Promise Tracker</span>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#citizenmonitoring">Citizen Monitoring</a>
+            </li>
+    				
+    	      </li>
+            <li>
+              <a href="#workshops">Workshops</a>
+            </li>
+            <li>
+              <a href="#background">Background & Press</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li>
-        	<a href="#home">Promise Tracker</a>
-        </li>
-        <li>
-          <a href="#citizenmonitoring">Citizen Monitoring</a>
-        </li>
-				
-	      </li>
-        <li>
-          <a href="#workshops">Workshops</a>
-        </li>
-        <li>
-          <a href="#background">Background & Press</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-
-<br>
-
+    <br>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" id="home">
       <div class="container">
-        <img src="img/promisetrackerlogo.jpg" alt="promisetrackerlogo" align="left">
-        <h1>Promise Tracker</h1>
-        
-        <p>After an election, how can citizens hold elected leaders accountable for promises that they made during the campaign season? Promise Tracker explores the role citizen monitoring can play in holding elected leaders accountable for promises they make about infrastructure.</p>
-        
+        <div class="col-sm-3">
+          <img src="img/promisetrackerlogo.png" alt="promisetrackerlogo" class="main-logo">
+        </div>
+        <div class="col-sm-9 overview">
+          <h1>Promise Tracker</h1>
+          <h3 class="title">Data collection for civic action</h3>
+          <p class="pad-bottom">
+            After an election, how can citizens hold elected leaders accountable for promises they made during the campaign season? We believe that informed communities, equipped with data, are the best positioned to assess the performance of their representatives and advocate for change on a local level. Promise Tracker explores how citizen monitoring can extend civic engagement between election cycles.
+          </p>
+        </div>
       </div>
     </div>
-<!-- <hr style="color: #ffffff;" id="citizenmonitoring"> -->
-<div id="citizenmonitoring">
-</div>
-<br><br>
+
     <div class="container">
+      <div id="citizenmonitoring">
+        <br><br>
+    		<div class="row page-section">
+          <div class="col-sm-6">
+    				<h2>Citizen Monitoring</h2>
+            <p>
+              The MIT Center for Civic Media is currently building Promise Tracker, a web-based tool and complementary set of practices that provides citizens with the capacity to monitor and hold elected officials accountable to the promises they make.  Promise Tracker explores the role of citizens in gathering data and promoting accountability between election cycles. <br><br>Promise Tracker includes a form builder and mobile phone tool for data collection, allowing citizens to deploy data collection campaigns based around specific government commitments. The tool is currently being built and tested in partnership with organizations in Belo Horizonte and Sao Paulo, Brazil.
+            </p>
+          </div>
+          <div class="col-sm-6">  
+           <img src="img/mobilephone.jpg" align="right">
+          </div>
+        </div>
+      </div>
 
+  		<hr id="workshops">
+      <div class="row page-section">
+        <div class="col-sm-5">
+          <img src="img/workshopimage.jpg">
+        </div>
+        <div class="col-sm-7">
+  			  <h2>Initial Design Workshops</h2>
+          <p>The Promise Tracker team has conducted initial design workshops in São Paulo and Belo Horizonte, Brazil in collaboration with local partners. During each workshop, participants identified issues and infrastructure to monitor, collected data using Android mobile phones, and created data presentations based on the data they collected. Groups focused on issues ranging from public safety and accessibility (the availability of handrails on staircases) to litter in public parks to access to affordable housing.</p>
+  			  <p>In Belo Horizonte, we collaborated with Minas Gerais Office of Strategic Priorities and a community group called UBRAFRA. In São Paulo, we partnered with Rede Nossa São Paulo, a network of community organizations dedicated to create stronger links between citizens and their government. Through Nossa São Paulo, we worked with a group of citizens recently elected to monitor a specific set of promises that the Mayor has committed to achieving.</p>
+        </div>
+  		</div>
 
-
-		<div class="row">
-			<div class="col-md-12">	
-	
-				<img class="img-responsive" src="img/mobilephone.jpg" align="right" style="padding-left: 30px; padding-right: 50px; padding-top: 25px;">
-				<h2>Citizen Monitoring</h2>
-		 
-       			<p>The MIT Center for Civic Media is currently building Promise Tracker, a web-based tool and complementary set of practices that provides citizens with the capacity to monitor and hold elected officials accountable to the promises they make.  Promise Tracker explores the role of citizens in gathering data and promoting accountability between election cycles. <br><br>Promise Tracker includes a form builder and mobile phone tool for data collection, allowing citizens to deploy data collection campaigns based around specific government commitments. The tool is currently being built and tested in partnership with organizations in Belo Horizonte and São Paulo, Brazil.</p>
-		
-				<br>
-				<hr id="workshops">
-				<br>
-				<h2>Initial Design Workshops</h2>
-				<img class="img-responsive" src="img/workshopimage.jpg" align="left" style="padding-right:30px; padding-top: 5px;">
-				<p>The Promise Tracker team has conducted initial design workshops in São Paulo and Belo Horizonte, Brazil in collaboration with local partners. During each workshop, participants identified issues and infrastructure to monitor, collected data using Android mobile phones, and created data presentations based on the data they collected. Groups focused on issues ranging from public safety and accessibility (the availability of handrails on staircases) to litter in public parks to access to affordable housing.</p>
-				<p>In Belo Horizonte, we collaborated with Minas Gerais Office of Strategic Priorities and a community group called UBRAFA. In São Paulo, we partnered with Rede Nossa São Paulo, a network of community organizations dedicated to creating stronger links between citizens and their government. Through Nossa São Paulo, we worked with a group of citizens recently elected to monitor a specific set of promises that the Mayor has committed to achieving.</p>
-				<br>
-				<hr id="background">
-			</div>
-		</div>	
-		<div class="row">
-			<div class="col-md-6">
-				<br>
-				<h2>Background & Press</h2>
-				<br>
-				<p>The following blog posts document the Promise Tracker team's initial research and workshops:</p>
-		  		<a href="http://civic.mit.edu/blog/chelseabarabas/initial-reflections-on-promise-tracker">Initial Reflections on Promise Tracker</a>
- 	      		<br>
- 	      		<a href="http://civic.mit.edu/blog/alexishope/workshop-stories">Workshop Stories from São Paulo, Brazil</a>
- 	      		<br>
- 	      		<a href="http://civic.mit.edu/blog/erhardt/balancing-deep-and-wide-impacts-in-the-design-of-civic-tech">Presentation at 2014 Digital Media and Learning Conference: Balancing Deep and Wide Impacts in the Design of Civic Tech</a>
-          		<br>
-          		<a href="http://www.ethanzuckerman.com/blog/2014/01/24/promise-tracker-and-monitorial-citizenship/">Promise Tracker and Monitorial Citizenship</a>
-		  		<br><br>
-		  		<p>Promise Tracker in the Media:</p>
-		   		<p><a href="http://money.cnn.com/2014/07/09/technology/innovation/campaign-promise-app/">CNN article, "Making sure politicians make good on campaign promises? There's an app for that."</a></p>
-      	   		<p><a href="https://soundcloud.com/rahulbot/promisetracker-wrko-interview">Promise Tracker WRKO piece</a></p>
-			</div>
-				<br>
-				<!-- <h2>Center for Civic Media</h2> -->
-				<img class="img-responsive" src="img/civiclogonew.jpg" style="padding-left:30px;">
-				<p>Promise Tracker is a project of the <a href="http://civic.mit.edu/">Center for Civic Media</a>, a research group at MIT that works hand in hand with diverse communities to collaboratively create, design, deploy, and assess civic media tools and practices.
-
-<br><br>We are inventors of new technologies that support and foster civic media and political action, we are a hub for the study of these technologies, and we coordinate community-based design processes locally in the Boston area, across the United States, and around the world.</p>
-				
-			<div class="col-md-6">
-			
-			</div>
-			
-		</div>
-		<br><br>
-     
-<hr>
+  	  <hr id="background">
+    	<div class="row">
+    		<div class="col-md-5 press">
+    			<br>
+    			<h2>Press</h2>
+          <a href="http://money.cnn.com/2014/07/09/technology/innovation/campaign-promise-app/" target="blank">CNN article, "Making sure politicians make good on campaign promises? There's an app for that."</a>
+          <a href="https://soundcloud.com/rahulbot/promisetracker-wrko-interview" target="blank">Promise Tracker WRKO piece</a>
+          <a href="http://www.newsweek.com/fighting-corruption-one-app-time-latin-america-275188" target="blank">Newsweek article, "Fighting Corruption One App at a Time in Latin America"</a>
+          <br>
+          <h2>Background</h2>
+    	  	<a href="http://civic.mit.edu/blog/chelseabarabas/initial-reflections-on-promise-tracker" target="blank">Initial Reflections on Promise Tracker</a>
+    	      <a href="http://civic.mit.edu/blog/alexishope/workshop-stories" target="blank">Workshop Stories from São Paulo, Brazil</a>
+    	      <a href="http://civic.mit.edu/blog/erhardt/balancing-deep-and-wide-impacts-in-the-design-of-civic-tech" target="blank">Presentation at 2014 Digital Media and Learning Conference: Balancing Deep and Wide Impacts in the Design of Civic Tech</a>
+          <a href="http://www.ethanzuckerman.com/blog/2014/01/24/promise-tracker-and-monitorial-citizenship/" target="blank">Promise Tracker and Monitorial Citizenship</a>
+    		</div>
+        <div class="col-md-7">
+      		<br>
+      		<img src="img/civiclogonew.jpg" style="padding-left:30px;">
+      		<p>
+            Promise Tracker is a project of the <a href="http://civic.mit.edu/">Center for Civic Media</a>, a research group at MIT that works hand in hand with diverse communities to collaboratively create, design, deploy, and assess civic media tools and practices.
+            <br><br>
+            We are inventors of new technologies that support and foster civic media and political action, we are a hub for the study of these technologies, and we coordinate community-based design processes locally in the Boston area, across the United States, and around the world.
+          </p>
+      	</div>
+      </div>
+      <br><br> 
+      <hr>
       <footer>
         <p>All content <a href="https://creativecommons.org/licenses/by-sa/3.0/us/"> Attribution-ShareAlike 3.0 United States (CC BY-SA 3.0)</a> unless otherwise noted.</p>
       </footer>
-      <br>
-      <br>
-      <br>
-      <br>	
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      <br><br>
+    </div> 
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

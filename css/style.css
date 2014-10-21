@@ -1,0 +1,93 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand img {
+  height: 28px;
+  width: auto;
+  margin-top: -5px;
+  margin-right: 10px;
+
+}
+
+.navbar-inverse {
+  background-color: #5a5a5e;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav a:hover {
+  background: transparent !important;
+  color: #66c6ba !important;
+}
+
+.navbar-inverse .navbar-nav .active a:hover {
+  color: white !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  background: #66c6ba !important;
+}
+
+.navbar-inverse .navbar-brand, .navbar-nav > li > a {
+  color: white !important;
+}
+
+.container {
+  width: 80%;
+}
+
+.main-logo {
+  width: 80%;
+  height: auto;
+  margin: 60px 40px;
+}
+
+.overview {
+  padding: 40px;
+}
+
+#home .container {
+  padding-top: 20px;
+}
+
+#home .container h1 {
+  font-size: 38px;
+  margin-bottom: 0;
+}
+
+#home .container h3 {
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.jumbotron p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.press a {
+  display: block;
+}
+
+.page-section img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+hr {
+  margin: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .overview {
+    padding: 0;
+  }
+
+  .main-logo {
+    margin: 0 auto;
+    width: 50%;
+  }
+}

@@ -2,6 +2,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+header .container {
+  width: auto;
+}
+
 .navbar-brand img {
   height: 28px;
   width: auto;
@@ -73,6 +77,18 @@
   width: 100%;
 }
 
+.background {
+  text-align: center;
+}
+
+.background img {
+  width: 60%;
+}
+
+.background p {
+  text-align: left;
+}
+
 footer {
   text-align: center;
 }
@@ -84,6 +100,14 @@ hr {
 @media (max-width: 768px) {
   .overview {
     padding: 0;
+  }
+
+  .background {
+    margin-top: 30px;
+  }
+
+  .container {
+    width: auto;
   }
 
   .main-logo {
